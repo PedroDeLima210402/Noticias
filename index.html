@@ -6,24 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-   
-  <script src="./main.js" defer></script> 
-<title>W.Noticias</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="./main.js" defer></script>
+    <title>W.Noticias</title>
 </head>
 
-
 <body>
-    <header class="header-mobile">
+    <header>
         <img src="./assets/images/logo.svg" alt="Logo do site de niticias">
         <button>
+            <img src="./assets/images/icon-menu.svg" alt="Iconi do menu hamburguer">
+        </button>
+
+       
+
+
+        <nav class="mobile">
 
             <button>
                 <img src="./assets/images/icon-menu-close.svg" alt="icone de X para fechar o menu">
             </button>
 
-            
+
             <a href="#">Home</a>
             <a href="#">Novo</a>
             <a href="#">Popular</a>
@@ -32,12 +39,31 @@
 
 
         </nav>
+
+         <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Tranding</a>
+            <a href="#">Categorias</a>
+
+        </nav>
+
+
+
+
     </header>
+
+    
 
     <main>
 
         <section class="primeira-secao">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="Iconie de puzzle colorido">
+            <picture>
+                <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="Iconie de puzzle colorido">
+            </picture>
+
 
             <h1>O futuro brilhante da Web 3.0</h1>
 
@@ -103,3 +129,5 @@
 
 
 </body>
+
+</html>
